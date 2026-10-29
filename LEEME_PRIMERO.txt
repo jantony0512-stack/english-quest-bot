@@ -1,0 +1,26 @@
+ENGLISH QUEST BOT — VERSIÓN PREPARADA PARA IPHONE Y IPAD
+
+IMPORTANTE
+Esta carpeta contiene una versión preparada como PWA (aplicación web instalable), con manifiesto, iconos y caché básica. Para instalarla desde Safari como icono de pantalla de inicio, debe publicarse en un sitio HTTPS. Abrir index.html directamente desde Archivos no activa todas las funciones PWA en iOS.
+
+CÓMO PUBLICARLA (OPCIÓN SENCILLA: GITHUB PAGES)
+1. En una computadora, entra a https://github.com y crea una cuenta o inicia sesión.
+2. Crea un repositorio nuevo llamado english-quest-bot. Si quieres que sea accesible públicamente, elige Public.
+3. Sube TODOS los archivos y carpetas de esta carpeta, conservando la estructura:
+   - index.html
+   - manifest.webmanifest
+   - service-worker.js
+   - icons/icon-192.png
+   - icons/icon-512.png
+4. En el repositorio, abre Settings > Pages.
+5. En Build and deployment, elige Deploy from a branch; selecciona la rama main y la carpeta /(root), y guarda.
+6. Espera a que GitHub Pages publique el sitio. Abre la dirección HTTPS que muestre la sección Pages.
+7. En iPhone o iPad, abre esa dirección en Safari.
+8. Pulsa Compartir y selecciona “Añadir a pantalla de inicio” (en algunas versiones: “Add to Home Screen”). Confirma con “Añadir”.
+9. Abre English Quest desde el nuevo icono.
+
+NOTAS
+- No es una aplicación nativa de App Store; es una aplicación web instalable.
+- La versión actual conserva los datos en el navegador/dispositivo. Los datos no se sincronizan automáticamente entre iPhone, iPad y computadora.
+- La pantalla de administración y cualquier clave de demostración no deben considerarse seguras para producción. No publicar información real de estudiantes hasta implementar autenticación y un backend seguro.
+- La caché permite que los archivos principales puedan abrirse después de la primera carga, pero algunas funciones pueden requerir conexión.
